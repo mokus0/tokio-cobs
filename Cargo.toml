@@ -1,0 +1,18 @@
+[package]
+name = "tokio-cobs"
+version = "0.0.0"
+authors = [ "James Cook <mokus@deepbondi.net" ]
+description = "A tokio encoder and decoder for COBS (Consistent Overhead Byte-Stuffing) frames"
+repository = "https://github.com/mokus0/tokio-cobs"
+readme = "README.md"
+license = "MIT"
+
+[lib]
+name = "tokio_cobs"
+path = "src/lib.rs"
+
+[dependencies]
+bytes = "^0.4"
+cobs = "^0.1.3"
+tokio-io = "^0.1"
+
