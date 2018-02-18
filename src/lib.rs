@@ -6,6 +6,8 @@ use tokio_io::codec::{Decoder, Encoder};
 use bytes::{Bytes, BytesMut};
 
 pub struct CobsCodec;
+
+#[derive(Debug)]
 pub enum CobsCodecError {
     IoError(std::io::Error),
     EncodingError,
